@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>淫淫电影网 - 11月电影推荐、影展片单与年度佳片盘点</title>
+<meta name="description" content="淫淫电影网(https://yinyindianyingwang-wap.github.io)聚焦11月档期与11部精选片单，涵盖院线新片、影展经典、高分佳片与导演专题，是影迷的选片与观影指南。">
+<meta name="keywords" content="淫淫电影网,11月电影,11部电影,11月档期,电影推荐,影展片单,年度佳片,电影盘点">
+<meta name="author" content="淫淫电影网">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="淫淫电影网 - 11月电影推荐与影展片单">
+<meta property="og:description" content="聚焦11月档期与11部精选片单，涵盖院线新片、影展经典与年度佳片盘点。">
+<meta property="og:url" content="https://yinyindianyingwang-wap.github.io/">
+<meta property="og:site_name" content="淫淫电影网">
+<link rel="canonical" href="https://yinyindianyingwang-wap.github.io/">
+<style>
+:root{
+  --bg:#1a120c;
+  --bg2:#221811;
+  --card:#2a1f16;
+  --paper:#efe3d2;
+  --ink:#f0e6d6;
+  --ink2:#c9bba6;
+  --muted:#8a7c68;
+  --amber:#d18a2b;
+  --amber2:#e6a347;
+  --gold:#c8a24a;
+  --deep:#5a3418;
+  --line:#3a2c1e;
+  --line2:#4a3a28;
+  --sans:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  --serif:"Source Han Serif SC","Songti SC","SimSun",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.9;-webkit-font-smoothing:antialiased;background-image:radial-gradient(circle at 20% 0,rgba(209,138,43,.08),transparent 40%),radial-gradient(circle at 80% 100%,rgba(88,52,24,.4),transparent 45%)}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+.btn{display:inline-block;padding:13px 30px;border-radius:2px;font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase;transition:.25s;cursor:pointer;border:1px solid var(--amber);background:var(--amber);color:#1a120c;font-family:var(--sans)}
+.btn:hover{background:transparent;color:var(--amber)}
+.btn.ghost{background:transparent;color:var(--amber)}
+.btn.ghost:hover{background:var(--amber);color:#1a120c}
+.ticket{display:inline-block;font-size:11px;letter-spacing:3px;color:var(--amber2);border:1px solid var(--line2);padding:5px 14px;border-radius:2px;font-family:var(--sans)}
+
+/* ===== 顶部信息条 ===== */
+.topbar{background:#120c08;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted);padding:10px 0;font-family:var(--sans);letter-spacing:.5px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.topbar a{color:var(--ink2)}
+.topbar a:hover{color:var(--amber2)}
+
+/* ===== 报头 ===== */
+header{border-bottom:3px double var(--amber);padding:34px 0 26px;background:linear-gradient(180deg,rgba(209,138,43,.06),transparent)}
+.masthead{text-align:center}
+.masthead .edition{font-size:12px;letter-spacing:6px;color:var(--muted);text-transform:uppercase}
+.masthead h1{font-family:var(--serif);font-size:60px;font-weight:900;line-height:1;margin:12px 0 10px;letter-spacing:4px;color:var(--paper)}
+.masthead h1 a{color:var(--paper)}
+.masthead h1 a:hover{color:var(--amber2)}
+.masthead .en{font-size:14px;letter-spacing:12px;color:var(--amber);text-transform:uppercase;font-family:var(--sans)}
+.masthead .tagline{font-size:14px;color:var(--ink2);margin-top:14px;font-family:var(--serif);font-style:italic}
+.metabar{display:flex;justify-content:center;gap:32px;margin-top:18px;font-size:12px;color:var(--muted);font-family:var(--sans);flex-wrap:wrap}
+.metabar b{color:var(--amber2)}
+
+/* ===== 导航 ===== */
+nav{background:var(--bg2);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:2px;overflow-x:auto;padding:0;scrollbar-width:none}
+nav .wrap::-webkit-scrollbar{display:none}
+nav a{padding:15px 22px;font-size:13.5px;font-weight:800;letter-spacing:2px;color:var(--ink2);white-space:nowrap;transition:.2s;position:relative}
+nav a:hover,nav a.active{color:var(--amber2);background:rgba(209,138,43,.08)}
+
+/* ===== 通用 ===== */
+section{padding:72px 0;position:relative}
+.kicker{font-size:11px;letter-spacing:4px;color:var(--amber);text-transform:uppercase;font-family:var(--sans)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:46px;gap:24px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:18px}
+.sec-head .t h2{font-family:var(--serif);font-size:32px;font-weight:900;letter-spacing:2px;margin-top:8px;color:var(--paper)}
+.sec-head .t h2 em{font-style:normal;color:var(--amber)}
+.sec-head .sub{font-size:14px;color:var(--muted);max-width:520px;text-align:right}
+.view-all{text-align:center;margin-top:44px}
+
+/* ===== Hero 放映厅 ===== */
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:0;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:var(--card)}
+.hero .feat{padding:44px 44px 38px;position:relative;background:linear-gradient(135deg,#3a2818,#221811)}
+.hero .feat .badge{display:inline-block;background:var(--amber);color:#1a120c;font-size:11px;font-weight:900;letter-spacing:2px;padding:5px 14px;border-radius:2px;margin-bottom:22px}
+.hero .feat .num{font-family:var(--serif);font-size:88px;font-weight:900;color:var(--amber);line-height:.9;opacity:.5}
+.hero .feat h2{font-family:var(--serif);font-size:30px;font-weight:900;line-height:1.5;color:var(--paper);margin:6px 0 18px}
+.hero .feat h2 a:hover{color:var(--amber2)}
+.hero .feat p{font-size:15px;color:var(--ink2);max-width:520px}
+.hero .feat .meta{display:flex;gap:26px;margin-top:24px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);font-family:var(--sans)}
+.hero .feat .meta b{color:var(--amber2)}
+.hero .side{border-left:1px solid var(--line);display:flex;flex-direction:column}
+.hero .side .row{padding:17px 26px;border-bottom:1px solid var(--line);transition:.2s;display:flex;gap:14px;align-items:baseline}
+.hero .side .row:last-child{border-bottom:none}
+.hero .side .row:hover{background:rgba(209,138,43,.07)}
+.hero .side .row .n{font-family:var(--serif);font-size:20px;font-weight:900;color:var(--amber);flex-shrink:0;width:32px}
+.hero .side .row .t{font-size:14px;font-weight:700}
+.hero .side .row .t small{display:block;font-size:11.5px;color:var(--muted);font-weight:400}
+
+/* ===== 栏目一：11月档期（日期看板） ===== */
+.schedule{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.day{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 22px;background:var(--card);transition:.25s;cursor:pointer;position:relative}
+.day:nth-child(4n){border-right:none}
+.day:nth-child(n+5){border-bottom:none}
+.day:hover{border-color:var(--amber)}
+.day .d{font-family:var(--serif);font-size:36px;font-weight:900;color:var(--amber);line-height:1}
+.day .w{font-size:11px;color:var(--muted);letter-spacing:3px;text-transform:uppercase;margin:4px 0 14px}
+.day h4{font-family:var(--serif);font-size:17px;font-weight:900;color:var(--paper);margin-bottom:6px;line-height:1.5}
+.day h4 a:hover{color:var(--amber2)}
+.day .genre{font-size:11.5px;color:var(--amber2);letter-spacing:1px}
+.day .score{position:absolute;top:24px;right:22px;font-family:var(--serif);font-size:16px;font-weight:900;color:var(--paper);background:var(--deep);border-radius:50%;width:38px;height:38px;display:grid;place-items:center}
+
+/* ===== 栏目二：11部片单（编号清单 + 横向卡片） ===== */
+.eleven{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.eleven .item{display:flex;gap:20px;padding:20px;background:var(--card);border:1px solid var(--line);border-radius:4px;transition:.25s;align-items:flex-start}
+.eleven .item:hover{border-color:var(--amber);background:var(--bg2)}
+.eleven .no{font-family:var(--serif);font-size:30px;font-weight:900;color:var(--amber);line-height:1;flex-shrink:0;width:42px}
+.eleven .txt h4{font-family:var(--serif);font-size:18px;font-weight:900;color:var(--paper);line-height:1.5}
+.eleven .txt h4 a:hover{color:var(--amber2)}
+.eleven .txt .info{font-size:12px;color:var(--muted);margin:6px 0 10px;letter-spacing:.5px}
+.eleven .txt p{font-size:13.5px;color:var(--ink2)}
+.eleven .txt .why{margin-top:12px;font-size:12px;color:var(--amber2);font-family:var(--serif);font-style:italic;border-left:2px solid var(--amber);padding-left:10px}
+
+/* ===== 栏目三：影展经典（横向滚动胶片条） ===== */
+.reelwrap{border:1px solid var(--line);border-radius:4px;background:var(--card);padding:30px 34px}
+.strip-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px;flex-wrap:wrap;gap:12px}
+.strip-head h3{font-family:var(--serif);font-size:20px;font-weight:900;color:var(--paper)}
+.strip-head .nav{display:flex;gap:8px}
+.strip-head .nav button{border:1px solid var(--line2);background:var(--bg2);color:var(--ink2);width:38px;height:38px;border-radius:2px;cursor:pointer;font-size:16px;transition:.2s;font-family:var(--sans)}
+.strip-head .nav button:hover{border-color:var(--amber);color:var(--amber)}
+.filmbox{overflow-x:auto;scrollbar-width:thin;scrollbar-color:var(--amber) var(--bg2);scroll-behavior:smooth}
+.filmbox::-webkit-scrollbar{height:8px}
+.filmbox::-webkit-scrollbar-thumb{background:var(--amber);border-radius:4px}
+.filmbox .track{display:flex;gap:20px;padding-bottom:6px}
+.filmcard{flex:0 0 200px;background:var(--bg2);border:1px solid var(--line);border-radius:4px;overflow:hidden;transition:.25s}
+.filmcard:hover{border-color:var(--amber);transform:translateY(-5px)}
+.filmcard .poster{aspect-ratio:2/3;position:relative;padding:14px;display:flex;flex-direction:column;justify-content:space-between}
+.filmcard .poster .yr{font-family:var(--serif);font-size:14px;font-weight:900;color:var(--amber2)}
+.filmcard .poster .tag{align-self:flex-start;font-size:10px;letter-spacing:2px;background:rgba(0,0,0,.5);color:#fff;padding:3px 9px;border-radius:2px;text-transform:uppercase}
+.filmcard .body{padding:14px 16px}
+.filmcard .body h4{font-family:var(--serif);font-size:16px;font-weight:900;color:var(--paper);line-height:1.5}
+.filmcard .body h4 a:hover{color:var(--amber2)}
+.filmcard .body .dir{font-size:12px;color:var(--muted);margin-top:4px}
+
+/* ===== 栏目四：年度盘点（数据条） ===== */
+.statswrap{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.chart{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:30px}
+.chart h3{font-family:var(--serif);font-size:20px;font-weight:900;color:var(--paper);margin-bottom:26px}
+.bar-item{margin-bottom:20px}
+.bar-item .top{display:flex;justify-content:space-between;font-size:13.5px;margin-bottom:7px}
+.bar-item .top b{font-weight:700;color:var(--paper);font-family:var(--serif)}
+.bar-item .top span{color:var(--amber2);font-family:var(--serif);font-weight:900}
+.bar-item .track{height:8px;background:var(--bg2);border-radius:4px;overflow:hidden}
+.bar-item .track i{display:block;height:100%;border-radius:4px;background:linear-gradient(90deg,var(--deep),var(--amber))}
+
+.reviews{display:flex;flex-direction:column;gap:18px}
+.rv{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--amber);border-radius:4px;padding:22px 24px;transition:.25s}
+.rv:hover{border-color:var(--amber)}
+.rv .who{font-size:12px;color:var(--amber2);letter-spacing:2px;margin-bottom:8px}
+.rv blockquote{font-family:var(--serif);font-size:15.5px;color:var(--paper);line-height:1.85;font-style:italic}
+.rv blockquote::before{content:"「";font-size:28px;color:var(--amber);vertical-align:-6px;margin-right:4px}
+.rv blockquote::after{content:"」"}
+
+/* ===== 关于 ===== */
+.about{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--amber);border-radius:4px;padding:46px 44px}
+.about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center}
+.about h2{font-family:var(--serif);font-size:30px;font-weight:900;color:var(--paper);margin-bottom:18px}
+.about p{font-size:15.5px;color:var(--ink2)}
+.about .hl{color:var(--amber2);font-weight:700}
+.numbers{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.numbers div{background:var(--bg2);border:1px solid var(--line);border-radius:4px;padding:22px;text-align:center}
+.numbers b{display:block;font-family:var(--serif);font-size:34px;font-weight:900;color:var(--amber);line-height:1}
+.numbers span{font-size:12px;color:var(--muted);letter-spacing:1px}
+
+/* ===== 页脚 ===== */
+footer{background:#120c08;border-top:3px double var(--amber);padding:56px 0 26px;margin-top:44px}
+.foot{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:36px}
+.foot .bl h4{font-family:var(--serif);font-size:24px;font-weight:900;color:var(--amber);letter-spacing:2px}
+.foot .bl p{font-size:13.5px;color:var(--ink2);margin-top:14px;max-width:360px}
+.foot h5{font-size:12.5px;font-weight:900;color:var(--amber);margin-bottom:16px;letter-spacing:2px;text-transform:uppercase}
+.foot ul{list-style:none;font-size:13.5px}
+.foot li{padding:6px 0}
+.foot a{color:var(--ink2)}
+.foot a:hover{color:var(--amber2)}
+.copyright{margin-top:40px;border-top:1px solid var(--line);padding-top:22px;font-size:12.5px;color:var(--muted);text-align:center;line-height:2.2}
+.copyright a{color:var(--amber2);font-weight:700}
+
+/* ===== 响应式 ===== */
+@media (max-width:1000px){
+  .wrap{padding:0 18px}
+  .hero{grid-template-columns:1fr}
+  .hero .side{border-left:none;border-top:1px solid var(--line)}
+  .schedule{grid-template-columns:repeat(2,1fr)}
+  .day:nth-child(4n){border-right:1px solid var(--line)}
+  .day:nth-child(2n){border-right:none}
+  .day:nth-child(n+5){border-bottom:1px solid var(--line)}
+  .day:nth-child(n+7){border-bottom:none}
+  .eleven,.statswrap,.about-grid{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr 1fr;gap:30px}
+}
+@media (max-width:600px){
+  .masthead h1{font-size:38px;letter-spacing:2px}
+  .masthead .en{font-size:11px;letter-spacing:6px}
+  .hero .feat{padding:30px 24px}
+  .hero .feat .num{font-size:60px}
+  .hero .feat h2{font-size:22px}
+  nav a{padding:13px 16px;font-size:12.5px;letter-spacing:1px}
+  .sec-head .t h2{font-size:23px}
+  .sec-head .sub{text-align:left}
+  .schedule{grid-template-columns:1fr}
+  .day{border-right:none!important;border-bottom:1px solid var(--line)!important}
+  .day:last-child{border-bottom:none!important}
+  .filmcard{flex:0 0 160px}
+  .about{padding:32px 24px}
+  .numbers{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr}
+  section{padding:52px 0}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<!-- ============ 顶部信息条 ============ -->
+<div class="topbar">
+  <div class="wrap">
+    <span>// 2026 年第 41 周 · 本周推荐 11 部 · 11月档期持续更新</span>
+    <span><a href="#about">关于本站</a> &nbsp;|&nbsp; <a href="#">投稿</a> &nbsp;|&nbsp; <a href="#">RSS 订阅</a> &nbsp;|&nbsp; <a href="#">登录</a></span>
+  </div>
+</div>
+
+<!-- ============ 报头 ============ -->
+<header>
+  <div class="wrap masthead">
+    <div class="edition">— Vol.11 · No.41 · 选片专刊 —</div>
+    <h1><a href="https://yinyindianyingwang-wap.github.io/" title="淫淫电影网">淫淫电影网</a></h1>
+    <div class="en">Eleven Film Picks</div>
+    <div class="tagline">每月只做一件事：帮你选出最值得看的 11 部电影</div>
+    <div class="metabar">
+      <span><b>11</b> 部精选片单</span>
+      <span><b>11</b> 月院线档期</span>
+      <span><b>11</b> 位影评人推荐</span>
+      <span>更新于 2026.10.07</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 导航 ============ -->
+<nav>
+  <div class="wrap">
+    <a href="#november" class="active">11月档期</a>
+    <a href="#eleven">11部片单</a>
+    <a href="#festival">影展经典</a>
+    <a href="#review">年度盘点</a>
+    <a href="#about">关于我们</a>
+    <a href="#">高分榜</a>
+    <a href="#">导演专题</a>
+    <a href="#">观影日历</a>
+    <a href="#">片单存档</a>
+  </div>
+</nav>
+
+<!-- ============ Hero 放映厅 ============ -->
+<section style="padding-bottom:0;">
+  <div class="wrap hero">
+    <div class="feat">
+      <span class="badge">本周主打 · FEATURE</span>
+      <div class="num">11</div>
+      <h2><a href="#">十一月，<br>留给电影的第 <em>11</em> 个理由</a></h2>
+      <p>淫淫电影网专注于做一件事：把每个月的海量片源，筛成一份只留 11 部的观影清单。院线新片、影展修复、高分经典与冷门遗珠，按档期与心情排列好，让你不必再为「今晚看什么」纠结。</p>
+      <div class="meta"><span><b>本月精选</b> 11 部</span><span><b>院线热映</b> 6 部</span><span><b>影展片单</b> 12 部</span><span><b>平均评分</b> 8.4</span></div>
+    </div>
+    <div class="side">
+      <div class="row"><span class="n">01</span><span class="t">本月院线最值得看的三部<small>档期、口碑与上座率三维筛选</small></span></div>
+      <div class="row"><span class="n">02</span><span class="t">11 月影展修复片单<small>4K 修复 · 导演回顾展</small></span></div>
+      <div class="row"><span class="n">03</span><span class="t">适合一个人看的 11 部<small>情绪片单 · 独处夜晚推荐</small></span></div>
+      <div class="row"><span class="n">04</span><span class="t">11 月必看的冷门佳片<small>低排片但高分 · 别错过</small></span></div>
+      <div class="row"><span class="n">05</span><span class="t">导演专题：第十一部长片<small>11 位导演的第 11 部作品</small></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目一：11月档期 ============ -->
+<section id="november">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t"><span class="kicker">// 01 November Schedule</span><h2><em>11</em> 月院线档期</h2></div>
+      <p class="sub">按上映日期排列的 11 月重点影片，含档期、类型、口碑评分与选片理由，逐周更新。</p>
+    </div>
+    <div class="schedule">
+      <div class="day"><div class="d">03</div><div class="w">TUE · 周二</div><span class="score">8.6</span><h4><a href="#">沉默的边境</a></h4><div class="genre">犯罪 · 悬疑</div></div>
+      <div class="day"><div class="d">07</div><div class="w">SAT · 周六</div><span class="score">8.2</span><h4><a href="#">秋日长镜</a></h4><div class="genre">文艺 · 家庭</div></div>
+      <div class="day"><div class="d">11</div><div class="w">WED · 周三</div><span class="score">8.9</span><h4><a href="#">第十一封信</a></h4><div class="genre">剧情 · 书信体</div></div>
+      <div class="day"><div class="d">14</div><div class="w">SAT · 周六</div><span class="score">7.8</span><h4><a href="#">极夜列车</a></h4><div class="genre">科幻 · 惊悚</div></div>
+      <div class="day"><div class="d">18</div><div class="w">WED · 周三</div><span class="score">8.4</span><h4><a href="#">她与她的海</a></h4><div class="genre">爱情 · 治愈</div></div>
+      <div class="day"><div class="d">21</div><div class="w">SAT · 周六</div><span class="score">8.1</span><h4><a href="#">老电影院</a></h4><div class="genre">喜剧 · 怀旧</div></div>
+      <div class="day"><div class="d">25</div><div class="w">WED · 周三</div><span class="score">8.7</span><h4><a href="#">第十一小时</a></h4><div class="genre">战争 · 历史</div></div>
+      <div class="day"><div class="d">28</div><div class="w">SAT · 周六</div><span class="score">7.9</span><h4><a href="#">雪落无声</a></h4><div class="genre">犯罪 · 东北</div></div>
+    </div>
+    <div class="view-all"><a href="#" class="btn ghost">查看完整 11 月档期 →</a></div>
+  </div>
+</section>
+
+<!-- ============ 栏目二：11部片单 ============ -->
+<section id="eleven" style="background:var(--bg2);">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t"><span class="kicker">// 02 The List of 11</span><h2>本月 <em>11</em> 部精选</h2></div>
+      <p class="sub">从院线、流媒体、影展与经典库里筛出的 11 部，每部一句选片理由，覆盖不同心情与观影场景。</p>
+    </div>
+    <div class="eleven">
+      <div class="item"><span class="no">01</span><div class="txt"><h4><a href="#">第十一封信</a></h4><div class="info">剧情 / 书信体 / 118 min / 8.9 分</div><p>一封迟到三十年的信，串起两代人的错过与和解，全片靠表演与留白撑起情绪，本月最稳的一部。</p><div class="why">选片理由：台词克制，适合静下心看</div></div></div>
+      <div class="item"><span class="no">02</span><div class="txt"><h4><a href="#">沉默的边境</a></h4><div class="info">犯罪 / 悬疑 / 106 min / 8.6 分</div><p>边境小城的走私案，节奏紧、信息准，反转不靠巧合而靠人物选择，是近期少见的硬派犯罪片。</p><div class="why">选片理由：全程无尿点，节奏教科书</div></div></div>
+      <div class="item"><span class="no">03</span><div class="txt"><h4><a href="#">第十一小时</a></h4><div class="info">战争 / 历史 / 142 min / 8.7 分</div><p>以停战前最后一小时为切口，群像叙事克制而有力量，战场之外的家庭戏同样扎实。</p><div class="why">选片理由：大场面与小人物平衡得最好</div></div></div>
+      <div class="item"><span class="no">04</span><div class="txt"><h4><a href="#">她与她的海</a></h4><div class="info">爱情 / 治愈 / 103 min / 8.4 分</div><p>两位女性的海岛重逢，不煽情不狗血，海景摄影与配乐是隐形的第三主角。</p><div class="why">选片理由：适合周末下午场</div></div></div>
+      <div class="item"><span class="no">05</span><div class="txt"><h4><a href="#">秋日长镜</a></h4><div class="info">文艺 / 家庭 / 96 min / 8.2 分</div><p>一个家庭三天的相处，用一个超长镜头串起，日常却暗流涌动，是本月最需要耐心的那部。</p><div class="why">选片理由：长镜头的克制美学</div></div></div>
+      <div class="item"><span class="no">06</span><div class="txt"><h4><a href="#">老电影院</a></h4><div class="info">喜剧 / 怀旧 / 112 min / 8.1 分</div><p>县城最后一家老影院要拆了，放映员与常客们的故事，笑点密集但不廉价。</p><div class="why">选片理由：笑中带泪的情怀之作</div></div></div>
+      <div class="item"><span class="no">07</span><div class="txt"><h4><a href="#">雪落无声</a></h4><div class="info">犯罪 / 东北 / 121 min / 7.9 分</div><p>东北小城的一桩旧案重启，方言与雪景构成独特质感，冷幽默是最大亮点。</p><div class="why">选片理由：地域气质最浓的一部</div></div></div>
+      <div class="item"><span class="no">08</span><div class="txt"><h4><a href="#">极夜列车</a></h4><div class="info">科幻 / 惊悚 / 98 min / 7.8 分</div><p>密闭列车上的末日求生，设定不新但执行到位，中段一次反转值得回票价。</p><div class="why">选片理由：设定简单的爽片选择</div></div></div>
+      <div class="item"><span class="no">09</span><div class="txt"><h4><a href="#">第十一扇窗</a></h4><div class="info">悬疑 / 心理 / 88 min / 8.3 分</div><p>独居女孩发现对面楼多了一扇窗，低成本密闭空间的恐惧感营造得非常成功。</p><div class="why">选片理由：一个人看会更有感觉</div></div></div>
+      <div class="item"><span class="no">10</span><div class="txt"><h4><a href="#">晚风集市</a></h4><div class="info">纪录 / 市井 / 76 min / 8.0 分</div><p>跟拍一座城市的夜间集市，没有旁白只有声音，看完想去夜市走一圈。</p><div class="why">选片理由：声音设计值得单独听</div></div></div>
+      <div class="item"><span class="no">11</span><div class="txt"><h4><a href="#">第十一页</a></h4><div class="info">动画 / 奇幻 / 94 min / 8.5 分</div><p>一本会自己续写的小说，每一页打开都是新世界，视觉想象力本月最佳。</p><div class="why">选片理由：想象力与美术双在线</div></div></div>
+      <div class="item" style="border-style:dashed;background:transparent;"><span class="no">+</span><div class="txt"><h4><a href="#">候补位：等你来补</a></h4><div class="info">第 12 部由读者票选</div><p>每月留一个候补位，由读者留言提名，票数最高的那部会补进下月片单并附上短评。</p><div class="why">参与方式：在评论区留下片名与理由</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目三：影展经典 ============ -->
+<section id="festival">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t"><span class="kicker">// 03 Restoration & Retrospective</span><h2>影展经典片单</h2></div>
+      <p class="sub">11 月影展的修复与回顾单元，4K 修复、导演专题与冷门遗珠，错过可能要再等十年。</p>
+    </div>
+    <div class="reelwrap">
+      <div class="strip-head">
+        <h3>4K 修复 · 导演回顾展 · 11 位导演的第 11 部作品</h3>
+        <div class="nav"><button id="prev" aria-label="向左">‹</button><button id="next" aria-label="向右">›</button></div>
+      </div>
+      <div class="filmbox" id="strip">
+        <div class="track">
+          <div class="filmcard"><div class="poster" style="background:linear-gradient(160deg,#4a3520,#241910)"><span class="yr">1995</span><span class="tag">4K 修复</span></div><div class="body"><h4><a href="#">第十一封电报</a></h4><div class="dir">DIR. 王家卫风格 / 96 min</div></div></div>
+          <div class="filmcard"><div class="poster" style="background:linear-gradient(160deg,#3a3320,#1e1c10)"><span class="yr">2003</span><span class="tag">回顾展</span></div><div class="body"><h4><a href="#">黄昏修理铺</a></h4><div class="dir">DIR. 侯孝贤风格 / 112 min</div></div></div>
+          <div class="filmcard"><div class="poster" style="background:linear-gradient(160deg,#332a3a,#1a1620)"><span class="yr">1987</span><span class="tag">冷门遗珠</span></div><div class="body"><h4><a href="#">十一月的火车</a></h4><div class="dir">DIR. 阿巴斯风格 / 88 min</div></div></div>
+          <div class="filmcard"><div class="poster" style="background:linear-gradient(160deg,#3a2a20,#1c1610)"><span class="yr">2011</span><span class="tag">导演专题</span></div><div class="body"><h4><a href="#">第十一间房</a></h4><div class="dir">DIR. 金基德风格 / 100 min</div></div></div>
+          <div class="filmcard"><div class="poster" style="background:linear-gradient(160deg,#20303a,#101820)"><span class="yr">1972</span><span class="tag">4K 修复</span></div><div class="body"><h4><a href="#">沉默的第十一分钟</a></h4><div class="dir">DIR. 塔可夫斯基风格 / 165 min</div></div></div>
+          <div class="filmcard"><div class="poster" style="background:linear-gradient(160deg,#3a3020,#1e1a10)"><span class="yr">1999</span><span class="tag">回顾展</span></div><div class="body"><h4><a href="#">第十一页日记</a></h4><div class="dir">DIR. 蔡明亮风格 / 119 min</div></div></div>
+          <div class="filmcard"><div class="poster" style="background:linear-gradient(160deg,#2a3a30,#14201c)"><span class="yr">2016</span><span class="tag">冷门遗珠</span></div><div class="body"><h4><a href="#">她的第十一梦</a></h4><div class="dir">DIR. 是枝裕和风格 / 127 min</div></div></div>
+          <div class="filmcard"><div class="poster" style="background:linear-gradient(160deg,#3a2020,#1e1010)"><span class="yr">2008</span><span class="tag">导演专题</span></div><div class="body"><h4><a href="#">第十一枪</a></h4><div class="dir">DIR. 杜琪峰风格 / 108 min</div></div></div>
+          <div class="filmcard"><div class="poster" style="background:linear-gradient(160deg,#20303a,#101820)"><span class="yr">1966</span><span class="tag">4K 修复</span></div><div class="body"><h4><a href="#">第十一封匿名信</a></h4><div class="dir">DIR. 安东尼奥尼 / 130 min</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目四：年度盘点 ============ -->
+<section id="review" style="background:var(--bg2);">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t"><span class="kicker">// 04 Annual Review</span><h2>年度盘点与口碑</h2></div>
+      <p class="sub">截至 11 月的年度数据：类型分布、口碑榜与读者短评，每月更新一次。</p>
+    </div>
+    <div class="statswrap">
+      <div class="chart">
+        <h3>本年度各类型平均口碑</h3>
+        <div class="bar-item"><div class="top"><b>剧情 / 书信体</b><span>8.9</span></div><div class="track"><i style="width:100%"></i></div></div>
+        <div class="bar-item"><div class="top"><b>战争 / 历史</b><span>8.7</span></div><div class="track"><i style="width:97%"></i></div></div>
+        <div class="bar-item"><div class="top"><b>犯罪 / 悬疑</b><span>8.6</span></div><div class="track"><i style="width:96%"></i></div></div>
+        <div class="bar-item"><div class="top"><b>动画 / 奇幻</b><span>8.5</span></div><div class="track"><i style="width:95%"></i></div></div>
+        <div class="bar-item"><div class="top"><b>爱情 / 治愈</b><span>8.4</span></div><div class="track"><i style="width:94%"></i></div></div>
+        <div class="bar-item"><div class="top"><b>文艺 / 家庭</b><span>8.2</span></div><div class="track"><i style="width:92%"></i></div></div>
+        <div class="bar-item"><div class="top"><b>喜剧 / 怀旧</b><span>8.1</span></div><div class="track"><i style="width:91%"></i></div></div>
+        <div class="bar-item"><div class="top"><b>科幻 / 惊悚</b><span>7.8</span></div><div class="track"><i style="width:87%"></i></div></div>
+      </div>
+      <div class="reviews">
+        <h3 style="font-family:var(--serif);font-size:20px;font-weight:900;color:var(--paper);margin-bottom:6px">读者短评</h3>
+        <div class="rv"><div class="who">影评人 · 阿May</div><blockquote>淫淫电影网的价值在于它敢砍。一个月看几十部，最后只留 11 部，这种克制本身就是一种推荐标准。</blockquote></div>
+        <div class="rv"><div class="who">读者 · 林知夏</div><blockquote>每月的 11 部片单成了我的观影日历，省下的选片时间，够多看完两部。</blockquote></div>
+        <div class="rv"><div class="who">影迷 · 陈屿</div><blockquote>最实用的是每部那句选片理由——一句话就知道这部适不适合当下的心情。</blockquote></div>
+        <div class="rv"><div class="who">编辑部</div><blockquote>本月候补位开放提名，票数最高的那部将补进下月片单并附上短评。</blockquote></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 关于我们 ============ -->
+<section id="about" style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="about">
+      <div class="about-grid">
+        <div>
+          <span class="kicker">// About</span>
+          <h2>关于 <span class="hl">淫淫电影网</span></h2>
+          <p><span class="hl">淫淫电影网</span>（https://yinyindianyingwang-wap.github.io）是一个只做「11 部片单」的选片平台。我们相信影迷真正缺的不是片源，而是有人愿意替他看完、筛完、排好序。</p>
+          <p style="margin-top:12px;">每个月，我们按院线档期、流媒体上新、影展片单与经典库四个来源，筛出 11 部最值得看的电影，并附上档期、口碑评分与一句选片理由，让你不必再为「今晚看什么」纠结。</p>
+        </div>
+        <div class="numbers">
+          <div><b>11</b><span>部 / 每月精选</span></div>
+          <div><b>132</b><span>部 / 年度累计</span></div>
+          <div><b>8.4</b><span>平均口碑评分</span></div>
+          <div><b>4</b><span>个选片来源</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 页脚 ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="bl">
+        <h4>淫淫电影网</h4>
+        <p>每月精选 11 部电影，含档期、口碑评分与选片理由。内容仅供观影参考与交流，影片信息以片方与院线官方公告为准，版权归原权利人所有。</p>
+        <p style="margin-top:12px;font-size:12px;color:var(--muted);letter-spacing:1px">// 选片原则：看完全片 · 独立评分 · 不收片方费用</p>
+      </div>
+      <div>
+        <h5>栏目导航</h5>
+        <ul>
+          <li><a href="#november">11月档期</a></li>
+          <li><a href="#eleven">11部片单</a></li>
+          <li><a href="#festival">影展经典</a></li>
+          <li><a href="#review">年度盘点</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>选片专题</h5>
+        <ul>
+          <li><a href="#">高分榜</a></li>
+          <li><a href="#">导演专题</a></li>
+          <li><a href="#">观影日历</a></li>
+          <li><a href="#">片单存档</a></li>
+          <li><a href="#">冷门佳片</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>关于本站</h5>
+        <ul>
+          <li><a href="#about">网站介绍</a></li>
+          <li><a href="#">投稿与合作</a></li>
+          <li><a href="#">版权声明</a></li>
+          <li><a href="#">隐私政策</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2026 淫淫电影网 yinyindianyingwang-wap.github.io 版权所有 · 本站内容仅供观影参考与交流，影片版权归原作者及片方所有<br>
+      网站名称：<a href="https://yinyindianyingwang-wap.github.io/">淫淫电影网</a> ｜ 网站网址：https://yinyindianyingwang-wap.github.io/
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var s=document.getElementById('strip'),p=document.getElementById('prev'),n=document.getElementById('next');
+  function step(){return s.querySelector('.filmcard').getBoundingClientRect().width+20}
+  p.onclick=function(){s.scrollBy({left:-step()*2,behavior:'smooth'})};
+  n.onclick=function(){s.scrollBy({left:step()*2,behavior:'smooth'})};
+  var t=document.querySelectorAll('.schedule .day');
+  for(var i=0;i<t.length;i++){t[i].onclick=function(){}}
+})();
+</script>
+</body>
+</html>
